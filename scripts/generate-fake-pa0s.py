@@ -82,7 +82,7 @@ md:
     course_sched_src = '''#include <stdio.h>
 
 int main() {
-    printf(\"It's fake, dude.\\n\");
+    return 0;
 }
 '''
     with open(os.path.join(fake_student_id, 'course_sched.c'), 'w') as f_src:
