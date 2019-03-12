@@ -16,7 +16,7 @@ rd.seed(201120000)
 
 files_in_PA0_root = set(os.listdir())
 
-for _ in range(3):
+for _ in range(100):
     fake_student_id = str(UUID(int=rd.getrandbits(128)))
 
     if fake_student_id in files_in_PA0_root:
@@ -84,7 +84,7 @@ md:
 int main() {
     return 0;
 }
-'''
+''' if rd.random() < 0.9 else '''IDK'''
     with open(os.path.join(fake_student_id, 'course_sched.c'), 'w') as f_src:
         f_src.write(course_sched_src)
 
