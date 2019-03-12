@@ -16,13 +16,22 @@ rd.seed(201120000)
 
 files_in_PA0_root = set(os.listdir())
 
-for _ in range(100):
+import sys
+
+n = 100 if len(sys.argv) == 1 else int(sys.argv[1])
+
+for _ in range(n):
     fake_student_id = str(UUID(int=rd.getrandbits(128)))
 
     if fake_student_id in files_in_PA0_root:
         continue
 
     os.mkdir(fake_student_id)
+
+    os.mkdir(os.path.join(fake_student_id, 'docs'))
+    report_file_path = fake_student_id, 'docs', 'report.pdf' if rd.random() > 0.1 else 'report.docx'
+    with open(os.path.join(*report_file_path), 'w') as f_report:
+        f_report.write('$4')
 
     os.mkdir(os.path.join(fake_student_id, 'in'))
     os.mkdir(os.path.join(fake_student_id, 'out'))
