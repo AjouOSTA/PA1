@@ -1,0 +1,5 @@
+echo "Good luck" > Big_Fan_Of_KO.txt
+echo "Good luck too" > Big_Fan_of_jafffy.txt
+echo "You can make it" > Manhattan.txt
+ls > students.txt
+grep Fan < students.txt

@@ -1,0 +1,3 @@
+cd ~/workspace/PA0
+make
+make test
