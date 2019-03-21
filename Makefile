@@ -25,7 +25,6 @@ test:
 	./$(EXEC) < ./in/scenario5.txt > your/your_answer5.txt
 	cmp ./bash/bash_answer5.txt ./your/your_answer5.txt
 
-
 clean:
 	rm your_answer* bash_answer* $(EXEC)
 
