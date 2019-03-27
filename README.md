@@ -53,7 +53,7 @@ TA Mr.Choi는 채점을 위한 script를 작성했지만, 작성한 script들을
 
     ```
     $ ls  # out; 2019-1-PA0/
-    $ ready-to-grade ./2019-1-PA0/ # python3 $(프로젝트 경로)/scripts/ready-to-grade.py ./2019-1-PA0/ 과 같은 의미
+    $ ready-to-score ./2019-1-PA0/ # python3 $(프로젝트 경로)/scripts/ready-to-score.py ./2019-1-PA0/ 과 같은 의미
     $ auto-grade-pa0 ./2019-1-PA0/  # python3 $(프로젝트 경로)/scripts/auto-grade-pa0.py ./2019-1-PA0/ 
     $ report-grade ./2019-1-PA0/  # python3 $(프로젝트 경로)/scripts/report-grade.py ./2019-1-PA0/
     ```
