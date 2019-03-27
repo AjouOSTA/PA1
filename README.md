@@ -7,13 +7,13 @@
 - Process creation
 
     * Scenario 1
-    ```sh
+    ```
     $ pwd
     $ /bin/ls
     ```
     
     * Scenario 2
-    ```sh
+    ```
     $ ~/workspace/PA0/course_sched
     $ cd ~/workspace/PA0
     $ make
@@ -23,7 +23,7 @@
 - File redirection
 
     * Scenario 3
-    ```sh
+    ```
     $ echo "Good luck" > Big_Fan_Of_KO.txt
     $ echo "Good luck too" > Big_Fan_of_jafffy.txt
     $ echo "You can make it" > Manhattan.txt
@@ -32,7 +32,7 @@
     ```
     
     * Scenario 4
-    ```sh
+    ```
     $ cd ~/workspace/PA0
     $ make
     $ make test
@@ -41,7 +41,7 @@
 - Environmental variable
 
     * Scenario 5
-    ```sh
+    ```
     $ echo $PATH
     ```
 
@@ -51,7 +51,7 @@ TA Mr.Choi는 채점을 위한 script를 작성했지만, 작성한 script들을
 
 실행 예시는 아래와 같다.
 
-    ```sh
+    ```
     $ ls  # out; 2019-1-PA0/
     $ ready-to-grade 2019-1-PA0/ # python3 $(프로젝트 경로)/scripts/ready-to-grade.py 과 같은 의미
     $ auto-grade-pa0 2019-1-PA0/  # python3 $(프로젝트 경로)/scripts/auto-grade-pa0.py
