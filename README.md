@@ -47,15 +47,15 @@
 
 ## 채점 보조 기능
 
-TA Mr.Choi는 채점을 위한 script를 작성했지만, 작성한 script들을 매번 찾아가 실행하기 귀찮았다. 그래서 shell이 시작하자마자 아래 python script가 마치 shell built-in command처럼 실행되도록 작성하려고 한다.
+TA Mr.Choi는 채점을 위한 script를 작성했지만, 작성한 script들을 매번 찾아가 실행하기 귀찮았다. 그렇기 때문에 아래 python script가 마치 shell built-in command처럼 실행되도록 작성하려고 한다.
 
 실행 예시는 아래와 같다.
 
     ```
     $ ls  # out; 2019-1-PA0/
-    $ ready-to-grade 2019-1-PA0/ # python3 $(프로젝트 경로)/scripts/ready-to-grade.py 과 같은 의미
-    $ auto-grade-pa0 2019-1-PA0/  # python3 $(프로젝트 경로)/scripts/auto-grade-pa0.py
-    $ report-grade 2019-1-PA0/  # python3 $(프로젝트 경로)/scripts/report-grade.py
+    $ ready-to-grade ./2019-1-PA0/ # python3 $(프로젝트 경로)/scripts/ready-to-grade.py ./2019-1-PA0/ 과 같은 의미
+    $ auto-grade-pa0 ./2019-1-PA0/  # python3 $(프로젝트 경로)/scripts/auto-grade-pa0.py ./2019-1-PA0/ 
+    $ report-grade ./2019-1-PA0/  # python3 $(프로젝트 경로)/scripts/report-grade.py ./2019-1-PA0/
     ```
 
 ## 힌트와 팁
@@ -73,7 +73,7 @@ TA Mr.Choi는 채점을 위한 script를 작성했지만, 작성한 script들을
 
 # Grading
 
-- Deadline: **4월 7일 (일) 자정**
+- Deadline: **4월 10일 (수) 자정**
 - 기본 shell 기능 70% (시나리오 하나당 1/5 * 70 = 14점)
 - 보조 채점 기능 20%
 - 보고서 10%
